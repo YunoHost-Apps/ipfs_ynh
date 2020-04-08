@@ -3,8 +3,8 @@ Description=IPFS daemon
 After=network.target
 
 [Service]
-Environment=IPFS_PATH=/home/ipfs/.ipfs/
-User=ipfs
+Environment=IPFS_PATH=/home/admin/.ipfs/
+User=admin
 Group=users
 ExecStart=/opt/ipfs/ipfs daemon
 Restart=on-failure
