@@ -121,6 +121,7 @@ systemctl enable "$app".service
 rm -f "$final_path/install.sh"
 chmod +x "$final_path/ipfs"
 chown -R "$app": "$final_path"
+su ipfs -c /opt/ipfs/ipfs init
 
 #=================================================
 # SETUP SSOWAT
