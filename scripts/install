@@ -142,4 +142,6 @@ if [ "$is_public" -eq 1 ]; then
 fi
 
 # Reload services
+systemctl enable "$app"
+systemctl start "$app"
 systemctl reload nginx
