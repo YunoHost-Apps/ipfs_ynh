@@ -1,0 +1,13 @@
+[Unit]
+Description=IPFS daemon
+After=network.target
+
+[Service]
+Environment=IPFS_PATH=/home/ipfs/.ipfs/
+User=ipfs
+Group=users
+ExecStart=/opt/ipfs/ipfs daemon
+Restart=on-failure
+
+[Install]
+WantedBy=default.target
