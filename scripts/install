@@ -66,22 +66,6 @@ ynh_app_setting_set "$app" domain "$domain"
 ynh_app_setting_set "$app" path "$path_url"
 ynh_app_setting_set "$app" is_public "$is_public"
 
-
-#=================================================
-# INSTALL DEPENDENCIES
-#=================================================
-
-ynh_print_info "Installing dependencies..."
-
-### `ynh_install_app_dependencies` allows you to add any "apt" dependencies to the package.
-### Those deb packages will be installed as dependencies of this package.
-### If you're not using this helper:
-###		- Remove the section "REMOVE DEPENDENCIES" in the remove script
-###		- As well as the section "REINSTALL DEPENDENCIES" in the restore script
-###		- And the section "UPGRADE DEPENDENCIES" in the upgrade script
-
-#ynh_install_app_dependencies php7.0-mbstring
-
 #=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================

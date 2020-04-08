@@ -37,11 +37,11 @@
                 "name": "path",
                 "type": "path",
                 "ask": {
-                    "en": "Choose a path for ipfs /ipfs is accepted",
-                    "fr": "Choisissez un chemin pour ipfs /ipfs est accepté"
+                    "en": "Choose a path for ipfs /webui is accepted",
+                    "fr": "Choisissez un chemin pour ipfs /webui est accepté"
                 },
-                "example": "/ipfs",
-                "default": "/ipfs"
+                "example": "/webui",
+                "default": "/webui"
             },
             
             {
