@@ -1,6 +1,8 @@
 # IPFS app for YunoHost
 IPFS Server
 
+# NOT WORK IS IN DEV
+
 **Shipped version:** 0.4.23
 
 - [Yunohost project](https://yunohost.org)
