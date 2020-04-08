@@ -105,6 +105,13 @@ ynh_add_nginx_config
 ynh_system_user_create "$app"
 
 #=================================================
+# SETUP SYSTEMD
+#=================================================
+
+ynh_add_systemd_config
+systemctl enable "$app".service
+
+#=================================================
 # STORE THE CONFIG FILE CHECKSUM
 #=================================================
 
@@ -142,6 +149,5 @@ if [ "$is_public" -eq 1 ]; then
 fi
 
 # Reload services
-systemctl enable "$app"
 systemctl start "$app"
 systemctl reload nginx
