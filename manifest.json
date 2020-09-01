@@ -6,7 +6,7 @@
         "en": "ipfs package for YunoHost.",
         "fr": "ipfs pour YunoHost."
     },
-    "version": "0.4.23",
+    "version": "0.4.231",
     "url": "https://github.com/ipfs/go-ipfs",
     "license": "MIT/Apache-2.0",
     "maintainer": {
