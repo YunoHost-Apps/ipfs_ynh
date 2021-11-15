@@ -18,8 +18,7 @@
     },
     "multi_instance": false,
     "services": [
-        "nginx",
-        "mysql"
+        "nginx"
     ],
     "arguments": {
         "install": [{
@@ -37,7 +36,7 @@
             {
                 "name": "is_public",
                 "type": "boolean",
-                "default": "false"
+                "default": true
             }
         ]
     }
