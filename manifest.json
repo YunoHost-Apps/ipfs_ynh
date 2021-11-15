@@ -3,10 +3,10 @@
     "id": "ipfs",
     "packaging_format": 1,
     "description": {
-        "en": "ipfs package for YunoHost.",
-        "fr": "ipfs pour YunoHost."
+        "en": "Global, versioned, peer-to-peer filesystem",
+        "fr": "Système de fichiers global, versionné, peer-to-peer "
     },
-    "version": "0.4.231",
+    "version": "0.10.0~ynh1",
     "url": "https://github.com/ipfs/go-ipfs",
     "license": "MIT/Apache-2.0",
     "maintainer": {
@@ -14,32 +14,22 @@
         "email": "liberodark@gmail.com"
     },
     "requirements": {
-        "yunohost": ">= 2.7.2"
+        "yunohost": ">= 4.3.2"
     },
     "multi_instance": false,
     "services": [
         "nginx",
-        "php5-fpm",
         "mysql"
     ],
     "arguments": {
         "install": [{
                 "name": "domain",
-                "type": "domain",
-                "ask": {
-                    "en": "Choose a domain name for ipfs",
-                    "fr": "Choisissez un nom de domaine pour ipfs"
-                },
-                "example": "example.com"
+                "type": "domain"
             },
 
             {
                 "name": "path",
                 "type": "path",
-                "ask": {
-                    "en": "Choose a path for ipfs /webui is accepted",
-                    "fr": "Choisissez un chemin pour ipfs /webui est accepté"
-                },
                 "example": "/webui",
                 "default": "/webui"
             },
@@ -47,10 +37,6 @@
             {
                 "name": "is_public",
                 "type": "boolean",
-                "ask": {
-                    "en": "Is it a public site ?",
-                    "fr": "Est-ce un site public ?"
-                },
                 "default": "false"
             }
         ]
